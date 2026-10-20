@@ -1,77 +1,203 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Support Kselax and the development of free WordPress plugins.">
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="Support Kselax and the development of useful WordPress plugins.">
     <title>Support Kselax</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            padding: 40px 20px;
-            background: #f5f6f8;
-            color: #222;
-            font-family: system-ui, sans-serif;
-            line-height: 1.6;
+            background: #0b1020;
+            color: #eef3ff;
+            font: 16px/1.7 system-ui, sans-serif;
         }
-        main {
-            max-width: 680px;
-            margin: 40px auto;
-            padding: 32px;
-            background: #fff;
-            border-radius: 12px;
-        }
-        h1 {
-            margin-top: 0;
-        }
+
         a {
-            color: #155eef;
+            color: #a9c4ff;
+            text-decoration: none;
         }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            width: min(900px, calc(100% - 32px));
+            margin: auto;
+        }
+
+        header {
+            padding: 90px 0 55px;
+            text-align: center;
+        }
+
+        .label {
+            color: #a9c4ff;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 18px 0;
+            font-size: clamp(42px, 8vw, 68px);
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .intro {
+            max-width: 600px;
+            margin: auto;
+            color: #a8b4cc;
+            font-size: 18px;
+        }
+
+        h2 {
+            margin-bottom: 8px;
+            font-size: 27px;
+        }
+
+        .muted {
+            color: #a8b4cc;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin-top: 26px;
+        }
+
+        .card {
+            padding: 25px;
+            border: 1px solid #293650;
+            border-radius: 16px;
+            background: #121a2d;
+        }
+
+        .card h3 {
+            margin: 0 0 8px;
+            font-size: 20px;
+        }
+
+        .card p {
+            margin: 0 0 15px;
+            color: #a8b4cc;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid #40577f;
+            border-radius: 9px;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 25px 0 55px;
+        }
+
+        .plugins {
+            padding-top: 35px;
+            border-top: 1px solid #293650;
+        }
+
         footer {
-            margin-top: 32px;
-            color: #666;
+            padding: 25px 0 35px;
+            border-top: 1px solid #293650;
+            color: #a8b4cc;
+            text-align: center;
             font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding-top: 60px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <main>
+    <header class="container">
+        <div class="label">Independent WordPress developer</div>
         <h1>Support Kselax</h1>
-
-        <p>
-            Hi! I'm Kselax, an independent developer creating
-            useful plugins for WordPress.
+        <p class="intro">
+            I create lightweight, useful WordPress plugins.
+            If my work helps you, your support helps me keep improving
+            existing plugins and building new ones.
         </p>
+    </header>
 
-        <p>
-            I want to keep my plugins useful, lightweight and accessible
-            to everyone. If you find my work helpful, you can support
-            future development.
-        </p>
+    <main class="container">
+        <section class="section">
+            <h2>Support development</h2>
+            <p class="muted">
+                Every contribution is appreciated. Choose whichever
+                payment method is most convenient for you.
+            </p>
 
-        <h2>Support development</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Monobank</h3>
+                    <p>Support via a Monobank jar or payment link.</p>
+                    <!-- Add your Monobank link here when ready. -->
+                    <span class="muted">Payment link coming soon</span>
+                </article>
 
-        <p>
-            Donation options will be listed here soon.
-        </p>
+                <article class="card">
+                    <h3>Raiffeisen Bank</h3>
+                    <p>Bank transfer within Ukraine.</p>
+                    <!-- Add the card number you choose to publish. -->
+                    <span class="muted">Payment details coming soon</span>
+                </article>
 
-        <h2>WordPress plugins</h2>
+                <article class="card">
+                    <h3>PrivatBank</h3>
+                    <p>An additional option for Ukrainian supporters.</p>
+                    <!-- Add details only if you decide to use this option. -->
+                    <span class="muted">Payment details coming soon</span>
+                </article>
 
-        <p>
-            My plugins are designed to make WordPress websites
-            easier to build and manage.
-        </p>
+                <article class="card">
+                    <h3>PayPal</h3>
+                    <p>Support plugin development through PayPal.</p>
+                    <!-- Add your PayPal email after checking account limits. -->
+                    <span class="muted">Payment details coming soon</span>
+                </article>
+            </div>
+        </section>
 
-        <p>
-            <a href="https://wordpress.org/plugins/">
-                Explore WordPress plugins
+        <section class="section plugins">
+            <h2>My WordPress plugins</h2>
+            <p class="muted">
+                Explore my WordPress plugins and discover tools
+                designed to make website building and management easier.
+            </p>
+            <a class="button"
+               href="https://wordpress.org/plugins/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore WordPress plugins ↗
             </a>
-        </p>
-
-        <footer>
-            Thank you for supporting independent development.
-        </footer>
+            <!-- Replace the generic link with your public developer profile
+                 once your plugins are published. -->
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            Made by Kselax · Thank you for supporting independent development.
+        </div>
+    </footer>
 </body>
 </html>
